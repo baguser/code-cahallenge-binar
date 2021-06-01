@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <form class="modal-content animate" action="/admin_in" method="GET">
+      <h style="color: dark-grey; font-size: 17px; padding: 20px"
+        >ADMIN LOGIN
+      </h>
+
+      <div class="container">
+        <label for="uname"><b>USERNAME</b></label>
+        <input type="text" placeholder="Enter name" name="name" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="pass"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          Me
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button
+          type="button"
+          onclick="document.getElementById('student').style.display='none'"
+          class="cancelbtn"
+        >
+          Cancel
+        </button>
+        <span class="psw">Forgot <a href="#">Password?</a></span>
+      </div>
+    </form>
+  </body>
+</html>

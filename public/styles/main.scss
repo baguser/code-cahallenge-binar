@@ -1,0 +1,683 @@
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  height: 2000px;
+  letter-spacing: 0.1em;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.contain {
+  padding-left: 107px;
+  font-weight: bold;
+}
+#navb .navbar-nav {
+  margin-left: 80px;
+}
+
+#navb .nav-link {
+  padding-left: 32px;
+  color: #fff;
+  font-family: Open Sans;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+
+  &:hover {
+    background-color: chocolate;
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+  }
+}
+
+#navb .navr {
+  padding-right: 163px;
+}
+
+#navb .navr .btn-outline {
+  &:hover {
+    background-color: chocolate;
+    color: #fff;
+  }
+}
+
+#navb .navr li a {
+  color: #fff;
+}
+
+.navbar-nav li a {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+//akhir style navabar
+
+//style jumbotron pertama
+.mainJ {
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  height: 980px;
+  text-align: center;
+  margin-top: -120px;
+
+  .fas {
+    height: 300px;
+    width: 300px;
+  }
+
+  h1 {
+    margin-top: 240px;
+    margin-bottom: 30px;
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+    color: #fff;
+  }
+  h3 {
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 400px;
+    font-size: 24px;
+  }
+
+  .btn-play-now {
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+    color: #1a1917;
+    font-weight: bold;
+    padding: 10px 60px;
+    &:hover {
+      color: rgb(93, 93, 93);
+    }
+  }
+
+  .downn p {
+    font-size: 12px;
+    margin-top: 240px;
+    color: #fff;
+  }
+}
+
+//akhir style jumbotron pertama
+
+//style the games
+
+.theGames {
+  background-image: url(../images/the-games-bg.jpg);
+  background-size: cover;
+  height: 980px;
+  margin-top: -120px;
+
+  .mx-2 {
+    margin-top: 100px;
+  }
+
+  .textt {
+    margin-right: 30px;
+  }
+  h3 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400px;
+  }
+
+  h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 400px;
+  }
+
+  .img {
+    margin-top: 190px;
+    padding-right: 10px;
+  }
+
+  .img2 {
+    margin-top: 190px;
+  }
+}
+
+//akhir style the games
+
+// style feature
+
+.feature {
+  background-image: url(../images/features.jpg);
+  background-size: cover;
+  height: 980px;
+  margin-top: -120px;
+
+  h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+  }
+
+  .text {
+    margin-left: 25px;
+  }
+  h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+  }
+
+  .textLi {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffb548;
+    margin-bottom: 20px;
+  }
+
+  img {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 23px;
+  }
+  .mas .tex {
+    font-weight: 400px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  .uli {
+    position: absolute;
+    color: #fff;
+    margin-top: 220px;
+    margin-left: 750px;
+  }
+}
+//akhir style feature
+
+// style sistem req
+.sistem-req {
+  background-image: url(../images/requirements.png);
+  background-size: cover;
+  height: 980px;
+  margin-top: -120px;
+
+  .text-req {
+    color: #fff;
+    margin-top: 130px;
+  }
+  .text-center {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  h1 {
+    font-family: Arial;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: -190px;
+  }
+
+  h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+
+    color: #ffb548;
+  }
+
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  table {
+    color: white;
+    margin-left: -188px;
+    margin-top: -401px;
+  }
+
+  img {
+    margin-left: -189px;
+  }
+
+  table td {
+    width: 300px;
+  }
+}
+// akhir style sistem req
+
+//style top scorer
+.scoreer {
+  background-image: url(../images/top-score1.jpg);
+  background-size: cover;
+  height: 980px;
+  margin-top: -120px;
+
+  .btn-play-now {
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+    color: #1a1917;
+    font-weight: bold;
+    padding: 10px 60px;
+    margin-top: 40px;
+    &:hover {
+      color: rgb(93, 93, 93);
+    }
+  }
+
+  .text-scorer {
+    color: #fff;
+    margin-left: -215px;
+    margin-top: 350px;
+    line-height: -350px;
+    h1 {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 64px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      /* or 122% */
+    }
+  }
+
+  .card {
+    background-color: rgb(65, 65, 65);
+    margin-left: 960px;
+    margin-top: -450px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .card .img1 {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+
+  .card .img2 {
+    margin-left: 450px;
+    margin-top: -110px;
+  }
+
+  .card .evan {
+    margin-right: -200px;
+    margin-top: -80px;
+    margin-left: 80px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffb548;
+  }
+
+  .card .pc {
+    margin-right: -200px;
+    margin-top: -20px;
+    margin-left: 80px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .card-body {
+    margin-left: -150px;
+    margin-top: 70px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+  }
+
+  .text-muted {
+    margin-top: -30px;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .card2 {
+    background-color: rgb(65, 65, 65);
+    margin-left: 800px;
+    margin-top: -210px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .card2 .img1 {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+
+  .card2 .img2 {
+    margin-left: 450px;
+    margin-top: -110px;
+  }
+
+  .card2 .evan {
+    margin-right: -200px;
+    margin-top: -80px;
+    margin-left: 80px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffb548;
+  }
+
+  .card .pc {
+    margin-right: -200px;
+    margin-top: -20px;
+    margin-left: 80px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .card-body {
+    margin-left: -150px;
+    margin-top: 70px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+  }
+
+  .text-muted {
+    margin-top: -30px;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .card3 {
+    background-color: rgb(65, 65, 65);
+    margin-left: 900px;
+    margin-top: 30px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .card3 .img1 {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+
+  .card3 .img2 {
+    margin-left: 450px;
+    margin-top: -110px;
+  }
+
+  .card3 .evan {
+    margin-right: -200px;
+    margin-top: -80px;
+    margin-left: 80px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffb548;
+  }
+
+  .card .pc {
+    margin-right: -200px;
+    margin-top: -20px;
+    margin-left: 80px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .card-body {
+    margin-left: -150px;
+    margin-top: 70px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+  }
+
+  .text-muted {
+    margin-top: -30px;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+//akhi top scorer
+
+//akhi top scorer
+
+//style footer
+
+.futer {
+  background-image: url(../images/Rectangle.jpg);
+  background-size: cover;
+  height: 980px;
+  margin-top: -120px;
+  img {
+    margin-left: -120px;
+  }
+  .p1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -600px;
+    letter-spacing: 2px;
+    margin-left: 400px;
+    color: #ffffff;
+  }
+  h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 92px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: -550px;
+    margin-left: 400px;
+    color: #ffffff;
+  }
+  .p2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 400px;
+    margin-top: -370px;
+    color: #ffffff;
+  }
+
+  .er {
+    margin-top: -200px;
+    margin-left: 380px;
+  }
+  .emails {
+    width: 366px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    color: white;
+    p {
+      margin-left: 20px;
+    }
+    .p4 {
+      margin-top: 5px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+
+      color: #ffffff;
+      opacity: 0.2;
+      border-radius: 4px;
+    }
+
+    .p5 {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: -15px;
+      color: #ffb548;
+    }
+  }
+  .bton .btn-play {
+    margin-left: 18px;
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+    color: #1a1917;
+    font-weight: bold;
+    padding: 15px 60px;
+    width: 260px;
+    height: 60px;
+    &:hover {
+      color: rgb(93, 93, 93);
+    }
+  }
+
+  .ulli {
+    margin-left: -150px;
+    hr {
+      background-color: #fff;
+      width: 1350px;
+      margin-right: 80px;
+      margin-top: 40px;
+      opacity: 0.3;
+      border: 0.873968px solid #ffffff;
+    }
+    ul {
+      margin-left: 90px;
+    }
+    ul li {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding-left: 35px;
+      margin-top: 50px;
+    }
+    .quot {
+      margin-right: 60px;
+    }
+
+    ul img {
+      margin-right: -310px;
+      margin-top: 20px;
+      margin-bottom: -20px;
+      float: right;
+      width: 240px;
+    }
+    p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 240px;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+
+    .text-right {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: -33px;
+      margin-right: 70px;
+    }
+  }
+}
+
+//akhir style footer

@@ -1,0 +1,30 @@
+{
+  "name": "binar-challenge-c3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Bagus_Eri/binar-challenge-c3.git"
+  },
+  "author": "Bagus Eri Rizqiyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Bagus_Eri/binar-challenge-c3/issues"
+  },
+  "homepage": "https://gitlab.com/Bagus_Eri/binar-challenge-c3#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.10.1",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  }
+}

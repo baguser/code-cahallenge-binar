@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>challenge 4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="row">
+        <a href="../index.ejs"> < </a>
+        <img src="images/assets/logo1.png" alt="gambar logo" />
+        <h2 class="nav_h2">ROCK PAPER SCISSORS</h2>
+      </div>
+    </nav>
+    <!-- image player dan computer -->
+    <section>
+      <div class="container jarak">
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="area-player">
+              <h1>PLAYER 1</h1>
+              <ul>
+                <li id="libatu" class="players">
+                  <img src="images/assets/batu.png" class="batu" />
+                </li>
+                <li id="likertas" class="players">
+                  <img src="images/assets/kertas.png" class="kertas" />
+                </li>
+                <li id="ligunting" class="players">
+                  <img src="images/assets/gunting.png" class="gunting" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="" id="result">
+              <h1 class="info versus ganti">VS</h1>
+
+              <!-- score -->
+              <!-- <div class="score-player">
+                <p class="score player">Score: 0</p>
+              </div>
+              <div class="score-komputer">
+                <p class="score komputer">Score: 0</p>
+              </div> -->
+
+              <!-- aakhir score -->
+
+              <!-- refresh -->
+              <div class="logoR" id="refresh">
+                <a href="#"
+                  ><img
+                    class="text-center"
+                    src="images/assets/refresh.png"
+                    alt="logo refresh"
+                /></a>
+              </div>
+              <!-- akhir refres -->
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="area-comp">
+              <h1>COM</h1>
+              <ul>
+                <li id="c-Batu" class="compBatu">
+                  <img src="images/assets/batu.png" class="batu" />
+                </li>
+                <li id="c-Kertas" class="compKertas">
+                  <img src="images/assets/kertas.png" class="kertas" />
+                </li>
+                <li id="c-Gunting" class="compGunting">
+                  <img src="images/assets/gunting.png" class="gunting" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir image player dan computer -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="libraries/bootstrap/jquery/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/bootstrap/js/script.js"></script>
+  </body>
+</html>

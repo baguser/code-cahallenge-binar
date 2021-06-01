@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative - Bootstrap 3 Responsive Admin Template"
+    />
+    <meta name="author" content="GeeksLabs" />
+    <meta
+      name="keyword"
+      content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal"
+    />
+    <!-- <link rel="shortcut icon" href="img/favicon.png" /> -->
+
+    <title>Creative - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap-theme.css" />
+
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- full calendar css-->
+    <link
+      href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/fullcalendar/fullcalendar/fullcalendar.css"
+      rel="stylesheet"
+    />
+    <!-- easy pie chart-->
+    <link
+      href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/fullcalendar.css" />
+    <link href="libraries/bootstrap/css/widgets.css" rel="stylesheet" />
+    <link href="libraries/bootstrap/css/style.css" rel="stylesheet" />
+    <link
+      href="libraries/bootstrap/css/style-responsive.css"
+      rel="stylesheet"
+    />
+    <link href="libraries/bootstrap/css/xcharts.min.css" rel=" stylesheet" />
+    <link
+      href="libraries/bootstrap/css/jquery-ui-1.10.4.min.css"
+      rel="stylesheet"
+    />
+    <!-- =======================================================
+    Theme Name: NiceAdmin
+    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  </head>
+
+  <body>
+    <!-- container section start -->
+    <section id="container" class="">
+      <!--header start-->
+      <header class="header dark-bg">
+        <div class="toggle-nav">
+          <div
+            class="icon-reorder tooltips"
+            data-original-title="Toggle Navigation"
+            data-placement="bottom"
+          >
+            <i class="icon_menu"></i>
+          </div>
+        </div>
+
+        <!--logo start-->
+        <a href="index.ejs" class="logo"
+          >Back To <span class="lite">Home</span></a
+        >
+        <!--logo end-->
+
+        <div class="nav search-row" id="top_menu">
+          <!--  search form start -->
+          <ul class="nav top-menu">
+            <li>
+              <form class="navbar-form">
+                <input class="form-control" placeholder="Search" type="text" />
+              </form>
+            </li>
+          </ul>
+          <!--  search form end -->
+        </div>
+      </header>
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+        <div id="sidebar" class="nav-collapse">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+            <li class="">
+              <a class="" href="dasboard.ejs">
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="">
+              <a class="" href="tambah_data_user.ejs">
+                <span>Tambah Data</span>
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="update_data_user.ejs">
+                <span>Edit Data</span>
+              </a>
+            </li>
+          </ul>
+          <!-- sidebar menu end-->
+        </div>
+      </aside>
+
+      <!--main content start-->
+      <section id="main-content">
+        <section class="wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
+              <ol class="breadcrumb">
+                <li>
+                  <i class="fa fa-home"></i><a href="dasboard.ejs">Home</a>
+                </li>
+                <li><i class="fa fa-table"></i>Tambah Data</li>
+              </ol>
+            </div>
+          </div>
+          <!-- page start-->
+
+          <div class="col-md-6 portlets">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="pull-left">form ubah Data User</div>
+                <div class="widget-icons pull-right">
+                  <a href="#" class="wminimize"
+                    ><i class="fa fa-chevron-up"></i
+                  ></a>
+                  <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <% if (typeof errors !='undefined') { %>
+              <div class="alert alert-danger" role="alert">
+                <ul>
+                  <% errors.forEach(error => { %>
+                  <li><%= error.msg %></li>
+
+                  <% }) %>
+                </ul>
+              </div>
+              <% } %>
+              <div class="panel-body">
+                <div class="padd">
+                  <div class="form quick-post">
+                    <!-- Edit profile form (not working)-->
+                    <form
+                      class="form-horizontal"
+                      method="post"
+                      action="/contact/update"
+                    >
+                      <input
+                        type="hidden"
+                        name="oldNama"
+                        value="<%= contact.oldNama || contact.nama %>"
+                      />
+                      <!-- full nama -->
+                      <div class="form-group">
+                        <label class="control-label col-lg-2" for="nama"
+                          >Nama Lengkap</label
+                        >
+                        <div class="col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nama"
+                            name="nama"
+                            placeholder="Isikan nama"
+                            required
+                            value="<%= contact.nama %>"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Tanggal lahir -->
+                      <div class="form-group">
+                        <label class="control-label col-lg-2" for="dob"
+                          >Tanggal Lahir</label
+                        >
+                        <div class="col-lg-10">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="dob"
+                            name="dob"
+                            required
+                            value="<%= contact.dob %>"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- email -->
+                      <div class="form-group">
+                        <label class="control-label col-lg-2" for="email"
+                          >Email</label
+                        >
+                        <div class="col-lg-10">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Isikan nama email"
+                            required
+                            value="<%= contact.email %>"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- jenis kelamin -->
+                      <div class="form-group">
+                        <label class="control-label col-lg-2" for="nohp"
+                          >No HP</label
+                        >
+                        <div class="col-lg-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nohp"
+                            name="nohp"
+                            placeholder="Isikan nomer hp"
+                            required
+                            value="<%= contact.nohp %>"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Cateogry -->
+                      <div class="form-group">
+                        <label class="control-label col-lg-2" for="category"
+                          >Category</label
+                        >
+                        <div class="col-lg-10">
+                          <select
+                            class="form-control"
+                            type="text"
+                            id="category"
+                            name="category"
+                            value="<%= contact.category %>"
+                          >
+                            <option value="">- Choose Cateogry -</option>
+                            <option value="1">Player 1</option>
+                            <option value="2">Player 2</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!-- Buttons -->
+                      <div class="form-group">
+                        <!-- Buttons -->
+                        <div class="col-lg-offset-2 col-lg-9">
+                          <button type="submit" class="btn btn-primary">
+                            Ubah Data
+                          </button>
+                          <button type="reset" class="btn btn-default">
+                            Reset
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="widget-foot">
+                  <!-- Footer goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- page end-->
+        </section>
+        Advanced Table
+      </section>
+      <!--main content end-->
+      <div class="text-right">
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
+          -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </section>
+    <!-- container section start -->
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery-ui-1.9.2.custom.min.js"
+    ></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+  </body>
+</html>
